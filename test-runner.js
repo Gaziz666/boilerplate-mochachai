@@ -12,9 +12,9 @@ const testDir = './tests'
 // Add each .js file to the mocha instance
 fs.readdirSync(testDir).filter(function (file, i) {
     // Only keep the .js files
-    if(i === 0){
+    
     return file.substr(-3) === '.js';
-    }
+    
 }).forEach(function (file) {
     mocha.addFile(
         path.join(testDir, file)
